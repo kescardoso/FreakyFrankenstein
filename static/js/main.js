@@ -23,14 +23,14 @@ bodyparts_.forEach(function(bp) {
 });
 
 const bodyparts = {
-    leftarm: "url(../../images/monster/leftarm.png)",
-    rightarm: "url(../../images/monster/rightarm.png)",
+    leftarm: "url(images/monster/leftarm.png)",
+    rightarm: "url(images/monster/rightarm.png)",
 }
 
 const pumpkinImages = {
-  whole: "url(../../images/pumpkins/pumpkin_whole.png)",
-  halfSmashed: "url(../../images/pumpkins/pumpkin_half_smashed.png)",
-  smashed: "url(../../images/pumpkins/pumpkin_smashed.png)",
+  whole: "url(images/pumpkins/pumpkin_whole.png)",
+  halfSmashed: "url(images/pumpkins/pumpkin_half_smashed.png)",
+  smashed: "url(images/pumpkins/pumpkin_smashed.png)",
 };
 
 pumpkins.forEach(function(pumpkin) {
@@ -43,7 +43,7 @@ pumpkins.forEach(function(pumpkin) {
         pumpkin.style.backgroundImage = pumpkinImages.smashed;
       }, 150);
       if (pumpkinScore >= winScore) {
-        document.querySelector(".switch").style.backgroundImage = "url('../../images/switch/switch-on.png')";
+        document.querySelector(".switch").style.backgroundImage = "url('images/switch/switch-on.png')";
         canPullLever = true;
       }
     }
@@ -59,5 +59,5 @@ function leverPulled() {
   pumpkinScore = 0;
   canPullLever = false;
   document.getElementById("arm-left").style.display = "none";
-  document.querySelector(".switch").style.backgroundImage = "url('../../images/switch/switch-off.png')";
+  document.querySelector(".switch").style.backgroundImage = "url('images/switch/switch-off.png')";
 }
