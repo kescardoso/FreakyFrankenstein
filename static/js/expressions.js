@@ -1,4 +1,4 @@
-const frankensteinFace = document.getElementById("frankenstein-face");
+const frankensteinFace = document.querySelector(".head");
 // Changing the styles temporarily so you can visually represent the element
 frankensteinFace.style.height = "300px";
 frankensteinFace.style.width = "300px";
