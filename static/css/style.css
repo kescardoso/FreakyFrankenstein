@@ -1,42 +1,47 @@
 body {
-    background-image: url('images/test.jpg');
-    color: red;
+	background-image: url("../../images/test.jpg");
+	color: red;
 }
 
 .pumpkin {
     position: absolute;
     height: 100px;
     width: 100px;
-    background-image: url('images/pumpkins/pumpkin_whole.png');
-}
+    background-image: url('../../images/pumpkins/pumpkin_whole.png');
+	background-color: red;
+	background-size: 100px 100px;
+	}
 
 #pumpkin-1 {
     left: 100px;
-    top: 100px;
+    top: 350px;
 }
 
 #pumpkin-2 {
-    left: 100px;
-    top: 100px;
+    left: 230px;
+    top: 400px;
 }
 
 #pumpkin-3 {
-    left: 100px;
-    top: 100px;
+    left: 400px;
+    top: 400px;
 }
 
 #pumpkin-4 {
-    left: 100px;
-    top: 100px;
+    left: 550px;
+    top: 350px;
 }
 
 #pumpkin-5 {
-    left: 100px;
-    top: 100px;
+    left: 720px;
+    top: 400px;
 }
 
 .monster {
+	height: 500px;
+	width: 200px;
+	background-color: green;
     position: absolute;
-    left: 100px;
-    top: 200px;
+    left: 1000px;
+    top: 50px;
 }
