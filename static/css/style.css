@@ -1,0 +1,42 @@
+body {
+    background-image: url('images/test.jpg');
+    color: red;
+}
+
+.pumpkin {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-image: url('images/pumpkins/pumpkin_whole.png');
+}
+
+#pumpkin-1 {
+    left: 100px;
+    top: 100px;
+}
+
+#pumpkin-2 {
+    left: 100px;
+    top: 100px;
+}
+
+#pumpkin-3 {
+    left: 100px;
+    top: 100px;
+}
+
+#pumpkin-4 {
+    left: 100px;
+    top: 100px;
+}
+
+#pumpkin-5 {
+    left: 100px;
+    top: 100px;
+}
+
+.monster {
+    position: absolute;
+    left: 100px;
+    top: 200px;
+}
