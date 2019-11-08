@@ -3,6 +3,16 @@ body {
   color: red;
 }
 
+.switch {
+	position: absolute;
+    height: 100px;
+    width: 75px;
+	left: 75px;
+	top: 40px;
+	background-color: blue;
+	
+	}
+
 .pumpkin {
   position: absolute;
   height: 100px;
@@ -45,3 +55,30 @@ body {
   left: 1000px;
   top: 50px;
 }
+
+#head {
+	
+	background-image: url("../../images/head.jpg");
+
+}
+
+#torso {
+	
+}
+
+#arm-left {
+	
+}
+
+#arm-right {
+	
+}
+
+#leg-left {
+	
+}
+
+#leg-right {
+	
+}
+
