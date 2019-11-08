@@ -16,6 +16,8 @@ Smash the pumpkins to reveal body parts to create frankenstein.
 4. Git 
 5. GitHub
 
+### Trello
+![Screenshot of our Trello board](https://github.com/Pattern-Projects/FreakyFrankenstein/blob/master/Trello.JPG "Trello")
 
 
 
