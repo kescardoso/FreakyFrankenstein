@@ -1,15 +1,16 @@
 body {
-	background-image: url("../../images/BG1.jpg");
+	background-image: url("../../images/background/BG1.jpg");
 	background-size: 1000px 600px;
 }
 
 .switch {
+	background-image: url("../../images/switch/switchON.png");
 	position: absolute;
     height: 100px;
     width: 75px;
 	left: 75px;
-	top: 40px;
-	background-color: blue;
+	top: 180px;
+	background-size: 75px 100px;
 	
 	}
 
@@ -52,7 +53,6 @@ body {
     position: absolute;
     left: 1000px;
     top: 50px;
-	background-color: green;
 }
 
 #head {
@@ -66,13 +66,16 @@ body {
 	background-image: url("../../images/monster/leftarm.png");
 	height: 500px;
 	width: 256px;
-	
+	position: absolute;
+	top: 0px;
 }
 
 #arm-right {
 	background-image: url("../../images/monster/rightarm.png");
 	height: 500px;
 	width: 256px;
+	position: absolute;
+	top: 0px;
 	
 }
 
@@ -80,6 +83,8 @@ body {
 	background-image: url("../../images/monster/leftleg.png");
 	height: 500px;
 	width: 256px;
+	position: absolute;
+	top: 0px;
 	
 }
 
@@ -87,6 +92,8 @@ body {
 	background-image: url("../../images/monster/rightleg.png");
 	height: 500px;
 	width: 256px;
+	position: absolute;
+	top: 0px;
 	
 }
 
