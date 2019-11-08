@@ -16,6 +16,17 @@ lever.addEventListener("click", function() {
   }
 });
 
+const bodyparts_ = document.querySelectorAll(".body-part");
+
+bodyparts_.forEach(function(bp) {
+    bp.style.display = "none";
+});
+
+const bodyparts = {
+    leftarm: "url(../../images/monster/leftarm.png)",
+    rightarm: "url(../../images/monster/rightarm.png)",
+}
+
 const pumpkinImages = {
   whole: "url(../../images/pumpkins/pumpkin_whole.png)",
   halfSmashed: "url(../../images/pumpkins/pumpkin_half_smashed.png)",
@@ -24,6 +35,7 @@ const pumpkinImages = {
 
 pumpkins.forEach(function(pumpkin) {
   pumpkin.addEventListener("click", function() {
+      document.getElementById("arm-left").style.display = "";
     if (pumpkin.style.backgroundImage != pumpkinImages.smashed) {
       pumpkinScore++;
       pumpkin.style.backgroundImage = pumpkinImages.halfSmashed;
@@ -31,6 +43,7 @@ pumpkins.forEach(function(pumpkin) {
         pumpkin.style.backgroundImage = pumpkinImages.smashed;
       }, 150);
       if (pumpkinScore >= winScore) {
+        document.querySelector(".switch").style.backgroundImage = "url('../../images/switch/switch-on.png')";
         canPullLever = true;
       }
     }
@@ -45,26 +58,6 @@ function leverPulled() {
   });
   pumpkinScore = 0;
   canPullLever = false;
+  document.getElementById("arm-left").style.display = "none";
+  document.querySelector(".switch").style.backgroundImage = "url('../../images/switch/switch-off.png')";
 }
-
-const frankensteinFace = document.querySelector(".head");
-// Changing the styles temporarily so you can visually represent the element
-frankensteinFace.style.height = "300px";
-frankensteinFace.style.width = "300px";
-frankensteinFace.style.backgroundColor = "#333";
-
-// Object containing different states of expressions
-const faces = {
-  happy: "#123123", //URL to a happy face of Frankenstein, defaulted as a color for now
-  unhappy: "#333", //URL to an unhappy face of Frankenstein, defaulted as a color for now
-};
-
-// Changes the value of the background-image of the frankenstein face element (when they exist), for now just the background color
-function changeExpression(face) {
-  frankensteinFace.style.backgroundColor = face;
-}
-
-// Just for testing the function
-frankensteinFace.addEventListener("click", function() {
-  changeExpression(faces.happy);
-});

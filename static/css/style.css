@@ -1,140 +1,86 @@
 body {
-<<<<<<< HEAD
-  background-image: url("../../images/test.jpg");
-  color: red;
-=======
-	background-image: url("../../images/BG1.jpg");
-	background-size: 1000px 600px;
->>>>>>> 815ea9d48071fb3b237a9873434f568d08cdb028
+  background-image: url("../../images/background/BG1.jpg");
+  background-size: 1000px 600px;
 }
 
 .switch {
-	position: absolute;
-    height: 100px;
-    width: 75px;
-	left: 75px;
-	top: 40px;
-	background-color: blue;
-	
-	}
+  position: absolute;
+  height: 100px;
+  width: 75px;
+  left: 75px;
+  top: 40px;
+  background-image: url("../../images/switch/switch-off.png");
+  background-size: contain;
+  background-position: center;
+}
 
 .pumpkin {
-<<<<<<< HEAD
   position: absolute;
   height: 100px;
   width: 100px;
   background-image: url("../../images/pumpkins/pumpkin_whole.png");
   background-size: 100px 100px;
-  cursor: url("../../images/hammer.png"), pointer;
 }
 
 #pumpkin-1 {
   left: 100px;
-  top: 350px;
+  top: 390px;
 }
 
 #pumpkin-2 {
   left: 230px;
-  top: 400px;
+  top: 440px;
 }
 
 #pumpkin-3 {
   left: 400px;
-  top: 400px;
+  top: 440px;
 }
 
 #pumpkin-4 {
   left: 550px;
-  top: 350px;
+  top: 390px;
 }
 
 #pumpkin-5 {
   left: 720px;
-  top: 400px;
+  top: 440px;
 }
 
 .monster {
   height: 500px;
-  width: 200px;
-  background-color: green;
+  width: 256px;
   position: absolute;
   left: 1000px;
   top: 50px;
-=======
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    background-image: url('../../images/pumpkins/pumpkin_whole.png');
-	background-size: 100px 100px;
-	}
-
-#pumpkin-1 {
-    left: 100px;
-    top: 390px;
-}
-
-#pumpkin-2 {
-    left: 230px;
-    top: 440px;
-}
-
-#pumpkin-3 {
-    left: 400px;
-    top: 440px;
-}
-
-#pumpkin-4 {
-    left: 550px;
-    top: 390px;
-}
-
-#pumpkin-5 {
-    left: 720px;
-    top: 440px;
-}
-
-.monster {
-	height: 500px;
-	width: 256px;
-    position: absolute;
-    left: 1000px;
-    top: 50px;
-	background-color: green;
->>>>>>> 815ea9d48071fb3b237a9873434f568d08cdb028
 }
 
 #head {
-	background-image: url("../../images/monster/head1.png");
-	height: 500px;
-	width: 256px;
-
+  background-image: url("../../images/monster/head1.png");
+  height: 500px;
+  width: 256px;
 }
 
 #arm-left {
-	background-image: url("../../images/monster/leftarm.png");
-	height: 500px;
-	width: 256px;
-	
+  background-image: url("../../images/monster/leftarm.png");
+  height: 500px;
+  width: 256px;
 }
 
 #arm-right {
-	background-image: url("../../images/monster/rightarm.png");
-	height: 500px;
-	width: 256px;
-	
+  background-image: url("../../images/monster/rightarm.png");
+  height: 500px;
+  width: 256px;
 }
 
 #leg-left {
-	background-image: url("../../images/monster/leftleg.png");
-	height: 500px;
-	width: 256px;
-	
+  background-image: url("../../images/monster/leftleg.png");
+  height: 500px;
+  width: 256px;
 }
 
 #leg-right {
-	background-image: url("../../images/monster/rightleg.png");
-	height: 500px;
-	width: 256px;
-	
+  background-image: url("../../images/monster/rightleg.png");
+  height: 500px;
+  width: 256px;
 }
-
