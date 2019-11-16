@@ -4,9 +4,9 @@
 
 ### Introduction & Purpose
 
-This was our entry for Code Institutes Hackathon nov2019 
-Our theme was Freaky Frankenstein!
-We worked hard on this, recieving 3rd place for our effort.
+This was our entry for Code Institutes Hackathon nov2019  
+Our theme was Freaky Frankenstein!  
+We worked hard on this, recieving 3rd place for our effort.  
 
 ### Our Idea 
 Smash the pumpkins to reveal body parts to create frankenstein.
