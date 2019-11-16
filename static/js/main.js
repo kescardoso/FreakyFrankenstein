@@ -1,7 +1,8 @@
 // When a pumpkin is smashed the pumpkin score will increase by 1
 let pumpkinScore = 0,
   winScore = document.querySelectorAll(".pumpkin").length,
-  canPullLever = false;
+  canPullLever = false,
+  found = [0,1,2,3];
 
 const lever = document.querySelector(".switch"),
   pumpkins = document.querySelectorAll(".pumpkin");
@@ -22,6 +23,8 @@ bodyparts_.forEach(function(bp) {
     bp.style.display = "none";
 });
 
+
+
 const bodyparts = {
     leftarm: "url(images/monster/leftarm.png)",
     rightarm: "url(images/monster/rightarm.png)",
@@ -35,7 +38,28 @@ const pumpkinImages = {
 
 pumpkins.forEach(function(pumpkin) {
   pumpkin.addEventListener("click", function() {
-      document.getElementById("arm-left").style.display = "";
+	bp = found[Math.floor(Math.random() * found.length)];
+	found = found.filter(part => part != bp);
+	
+	console.log(found)
+	
+	switch(bp) {
+	  case 0:
+		document.querySelector("#arm-left").style.display = "";
+		break;
+	  case 1:
+		document.querySelector("#arm-right").style.display = "";
+		break;
+	  case 2:
+		document.querySelector("#leg-left").style.display = "";
+		break;
+	  case 3:
+		document.querySelector("#leg-right").style.display = "";
+		break;
+	  default:
+}
+	
+	
     if (pumpkin.style.backgroundImage != pumpkinImages.smashed) {
       pumpkinScore++;
       pumpkin.style.backgroundImage = pumpkinImages.halfSmashed;
@@ -58,6 +82,9 @@ function leverPulled() {
   });
   pumpkinScore = 0;
   canPullLever = false;
-  document.getElementById("arm-left").style.display = "none";
+  found = [0,1,2,3];
+  bodyparts_.forEach(function(bp) {
+    bp.style.display = "none";
+  });
   document.querySelector(".switch").style.backgroundImage = "url('images/switch/switchOFF.png')";
 }

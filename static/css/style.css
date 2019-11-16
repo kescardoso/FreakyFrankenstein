@@ -59,19 +59,11 @@ body {
 }
 
 .monster {
-<<<<<<< HEAD
   height: 500px;
   width: 256px;
   position: absolute;
   left: 1000px;
   top: 50px;
-=======
-	height: 500px;
-	width: 256px;
-    position: absolute;
-    left: 1000px;
-    top: 50px;
->>>>>>> ca76d012fd5a4512fc96d13ffb7f2810150804d0
 }
 
 #head {
@@ -81,34 +73,12 @@ body {
 }
 
 #arm-left {
-<<<<<<< HEAD
-  background-image: url("../../images/monster/leftarm.png");
-  height: 500px;
-  width: 256px;
-}
-
-#arm-right {
-  background-image: url("../../images/monster/rightarm.png");
-  height: 500px;
-  width: 256px;
-}
-
-#leg-left {
-  background-image: url("../../images/monster/leftleg.png");
-  height: 500px;
-  width: 256px;
-}
-
-#leg-right {
-  background-image: url("../../images/monster/rightleg.png");
-  height: 500px;
-  width: 256px;
-=======
 	background-image: url("../../images/monster/leftarm.png");
 	height: 500px;
 	width: 256px;
 	position: absolute;
 	top: 0px;
+
 }
 
 #arm-right {
@@ -136,5 +106,4 @@ body {
 	position: absolute;
 	top: 0px;
 	
->>>>>>> ca76d012fd5a4512fc96d13ffb7f2810150804d0
 }
