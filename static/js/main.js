@@ -43,7 +43,7 @@ pumpkins.forEach(function(pumpkin) {
         pumpkin.style.backgroundImage = pumpkinImages.smashed;
       }, 150);
       if (pumpkinScore >= winScore) {
-        document.querySelector(".switch").style.backgroundImage = "url('images/switch/switch-on.png')";
+        document.querySelector(".switch").style.backgroundImage = "url('images/switch/switchON.png')";
         canPullLever = true;
       }
     }
@@ -59,5 +59,5 @@ function leverPulled() {
   pumpkinScore = 0;
   canPullLever = false;
   document.getElementById("arm-left").style.display = "none";
-  document.querySelector(".switch").style.backgroundImage = "url('images/switch/switch-off.png')";
+  document.querySelector(".switch").style.backgroundImage = "url('images/switch/switchOFF.png')";
 }
