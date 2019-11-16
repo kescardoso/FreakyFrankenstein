@@ -3,6 +3,13 @@ body {
   background-size: 1000px 600px;
 }
 
+.confetti {
+	position: fixed;
+  background-image: url("../../images/background/confetti.gif");	
+	height: 600px;
+	width: 1600px;
+  }
+
 .switch {
   position: absolute;
   height: 100px;
@@ -56,6 +63,16 @@ body {
 #pumpkin-5 {
   left: 720px;
   top: 440px;
+}
+
+#chain {
+  background-image: url("../../images/monster/chain.png");
+  height: 400px;
+  width: 100px;
+  position: absolute;
+  left: 1090px;
+  top: -180px;
+	
 }
 
 .monster {
